@@ -46,5 +46,5 @@ Navigate to the project directory in your terminal and run:
 
 ```bash
 python pdf_dark_mode_viewer.py
-
+PS: SOME AI MODEL HAD TO HELP CREATE THIS TOOL :)
 #TKR-106
