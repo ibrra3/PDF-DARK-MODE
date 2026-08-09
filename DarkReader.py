@@ -31,10 +31,10 @@ class PDFDarkModeApp:
         self.file_frame = ttk.Frame(master, padding="10")
         self.file_frame.pack(fill=tk.X)
 
-        self.file_label = ttk.Label(self.file_frame, text="No file selected",_style="TLabel")
+        self.file_label = ttk.Label(self.file_frame, text="No file selected", style="TLabel")
         self.file_label.pack(side=tk.LEFT, padx=5, expand=True, fill=tk.X)
 
-        self.open_button = ttk.Button(self.file_frame, text="Open PDF", command=self.open_pdf,_style="TButton")
+        self.open_button = ttk.Button(self.file_frame, text="Open PDF", command=self.open_pdf, style="TButton")
         self.open_button.pack(side=tk.RIGHT, padx=5)
 
         # Image Display Frame (Canvas for scrolling)
@@ -58,19 +58,19 @@ class PDFDarkModeApp:
         self.nav_frame = ttk.Frame(master, padding="5")
         self.nav_frame.pack(fill=tk.X)
 
-        self.prev_button = ttk.Button(self.nav_frame, text="Previous", command=self.prev_page, state=tk.DISABLED,_style="TButton")
+        self.prev_button = ttk.Button(self.nav_frame, text="Previous", command=self.prev_page, state=tk.DISABLED, style="TButton")
         self.prev_button.pack(side=tk.LEFT, padx=10, pady=5)
 
-        self.page_label = ttk.Label(self.nav_frame, text="Page: -/-",_style="TLabel", anchor="center")
+        self.page_label = ttk.Label(self.nav_frame, text="Page: -/-", style="TLabel", anchor="center")
         self.page_label.pack(side=tk.LEFT, padx=5, expand=True)
 
-        self.next_button = ttk.Button(self.nav_frame, text="Next", command=self.next_page, state=tk.DISABLED,_style="TButton")
+        self.next_button = ttk.Button(self.nav_frame, text="Next", command=self.next_page, state=tk.DISABLED, style="TButton")
         self.next_button.pack(side=tk.RIGHT, padx=10, pady=5)
 
         # Save Button Frame
         self.save_frame = ttk.Frame(master, padding="5")
         self.save_frame.pack(fill=tk.X)
-        self.save_button = ttk.Button(self.save_frame, text="Save Inverted PDF", command=self.save_inverted_pdf, state=tk.DISABLED,_style="TButton")
+        self.save_button = ttk.Button(self.save_frame, text="Save Inverted PDF", command=self.save_inverted_pdf, state=tk.DISABLED, style="TButton")
         self.save_button.pack(pady=5) # Center the button
 
 
@@ -262,4 +262,4 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = PDFDarkModeApp(root)
     root.protocol("WM_DELETE_WINDOW", app.on_closing) # Handle window close button
-    root.mainloop()  
+    root.mainloop()

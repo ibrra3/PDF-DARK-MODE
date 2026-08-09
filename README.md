@@ -1,50 +1,43 @@
-# PDF-DARK-MODE
-A tool that opens pdf files , gives them a dark mode effect , making it more comfortable for the eye to read , Spooky says hi :)
-
 # PDF Dark Mode Viewer
 
-A simple desktop application to view PDF files with an inverted color scheme (dark mode).
+A small Python desktop application for reading PDF documents with an inverted colour scheme. Pages are rendered locally with PyMuPDF and displayed through a Tkinter interface.
 
 ## Features
 
-* Open PDF files.
-* Inverts colors of PDF pages for a dark mode effect.
-* Scrollable view for PDF pages.
-* Navigate between pages (Previous/Next).
-* Save the inverted (dark mode) PDF as a new file.
+* Open and render PDF files locally
+* Navigate between pages
+* Scroll pages larger than the application window
+* Invert page colours for comfortable low-light reading
+* Export the converted pages as a new PDF
 
 ## Requirements
 
-* Python 3.6+
-* The following Python libraries:
-    * PyMuPDF (fitz)
-    * Pillow (PIL)
+* Python 3.9 or later
+* Tkinter, normally included with standard Python installations
+* PyMuPDF
+* Pillow
 
 ## Installation
 
-1.  **download the files**
- 
+```bash
+git clone https://github.com/ibrra3/PDF-DARK-MODE.git
+cd PDF-DARK-MODE
+python -m venv .venv
+```
 
-2.  **Install the required libraries:**
-    It's recommended to use a virtual environment:
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
-    ```
-    Then install the packages:
-    ```bash
-    pip install -r requirements.txt
-    ```
-    Alternatively, you can install them individually:
-    ```bash
-    pip install pymupdf Pillow
-    ```
-
-## How to Run
-
-Navigate to the project directory in your terminal and run:
+Activate the environment and install the dependencies:
 
 ```bash
-python pdf_dark_mode_viewer.py
-PS: SOME AI MODEL HAD TO HELP CREATE THIS TOOL :)
-#TKR-106
+pip install -r requirements.txt
+```
+
+## Run
+
+```bash
+python DarkReader.py
+```
+
+## Project status
+
+This is a compact desktop utility and learning project. It currently processes pages in memory, so very large PDFs can require substantial RAM.
+
